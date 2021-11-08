@@ -1,0 +1,9 @@
+/.vscode
+/#src
+/node_modules
+/source
+gulpfile.js
+package-lock.json
+packege.json
+/SerhiiIkinPortfolio/js/script.js
+/SerhiiIkinPortfolio/css/style.css
