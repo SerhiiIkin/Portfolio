@@ -2,7 +2,6 @@
 /#src
 /node_modules
 /source
-.gitignore
 gulpfile.js
 package-lock.json
 packege.json
