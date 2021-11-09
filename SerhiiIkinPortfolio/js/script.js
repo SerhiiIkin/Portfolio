@@ -15,14 +15,26 @@ function testWebP(callback) {
     document.querySelector('body').classList.add('no-webp');
     }
     });
-var menuBurger = document.querySelector(".header__burger-menu");
-menuBurger.addEventListener("click", openMenu);
-function openMenu() {
-    menuBurger.classList.toggle("active");
+function burgerMenu() {
+    var menuBurger = document.querySelector(".header__burger-menu");
+    var linksMenu = document.querySelectorAll(".header__menu a");
     var menu = document.querySelector(".header__menu");
-    menu.classList.toggle("active");
-    document.body.classList.toggle("lock");
+    linksMenu.forEach(closeMenu);
+    function closeMenu(item) {
+        item.addEventListener("click", function () {
+            menuBurger.classList.remove("active");
+            document.body.classList.remove("lock");
+            menu.classList.remove("active");
+        });
+    }
+    function openMenu() {
+        menuBurger.classList.toggle("active");
+        menu.classList.toggle("active");
+        document.body.classList.toggle("lock");
+    }
+    menuBurger.addEventListener("click", openMenu);
 }
+burgerMenu();
 
 /**
  * Swiper 7.2.0
@@ -10118,24 +10130,6 @@ function btnClick() {
                 send();
                 setTimeout(sub, 6000);
             }
-            // var formData = new FormData(form);
-
-            // let response = await fetch("sendmail.php", {
-            //     method: "POST",
-            //     body: formData,
-            // });
-
-            // if (response.ok) {
-            //     var result = await response.json();
-            //     alert(result.message);
-            //     send();
-            //     setTimeout(sub, 6000);
-
-            //     newDiv.remove();
-            //     form.reset();
-            // } else {
-            //     alert("Error");
-            // }
         }
         function formValidate(form) {
             var error = 0;
