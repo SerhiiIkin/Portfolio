@@ -1801,6 +1801,9 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer__contact h3 {
@@ -1810,12 +1813,6 @@ button.swiper-pagination-bullet {
 .footer__contact a {
   color: #e4e4e4;
   padding-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   padding-left: 35px;
 }
