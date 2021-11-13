@@ -744,7 +744,7 @@ input[type=radio].visually-hidden {
 .about__top::before {
   content: "";
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: -1%;
   border: 89px solid #e4e4e4;
   border-radius: 50%;
@@ -2320,14 +2320,6 @@ button.swiper-pagination-bullet {
   .top__content {
     padding-right: 20px;
   }
-
-  .about__top::before {
-    top: 6%;
-  }
-
-  .about__mid::after {
-    bottom: -58%;
-  }
 }
 
 @media (max-width: 992px) {
@@ -2609,7 +2601,7 @@ button.swiper-pagination-bullet {
   }
 
   .footer__wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto;
   }
 
