@@ -177,6 +177,10 @@ input[type=radio].visually-hidden {
   color: #00c4f0;
 }
 
+.header {
+  padding-top: 10px;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2499,7 +2503,7 @@ button.swiper-pagination-bullet {
   .header__burger-menu {
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 25px;
     right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
