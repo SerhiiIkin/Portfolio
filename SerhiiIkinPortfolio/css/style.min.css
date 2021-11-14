@@ -360,11 +360,10 @@ input[type=radio].visually-hidden {
 
 .top__picture {
   margin-left: auto;
-  width: 46%;
 }
 
 .top__container {
-  max-width: 450px;
+  max-width: 500px;
   margin-right: 80px;
   position: relative;
 }
@@ -2001,7 +2000,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal__input {
-  height: 47px;
+  height: calc(30px + 17* ((100vw -320px) / 1600));
 }
 
 .modal__message {
@@ -2303,12 +2302,6 @@ button.swiper-pagination-bullet {
 @media (min-width: 1200px) {
   .container {
     max-width: calc(100vw - 10%);
-  }
-}
-
-@media (min-width: 1300px) {
-  .modal__message {
-    padding-bottom: 190px;
   }
 }
 
