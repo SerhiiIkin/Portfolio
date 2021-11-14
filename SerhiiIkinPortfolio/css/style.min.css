@@ -362,20 +362,20 @@ input[type=radio].visually-hidden {
   width: 46%;
 }
 
-.top__picture__container {
+.top__container {
   max-width: 450px;
   margin-right: 80px;
   position: relative;
 }
 
-.top__picture__container img {
+.top__container img {
   border-radius: 70%/30%;
   width: 100%;
   position: relative;
   z-index: 2;
 }
 
-.top__picture__container::after {
+.top__container::after {
   content: "";
   position: absolute;
   width: 98%;
@@ -2635,13 +2635,13 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 590px) {
-  .top__picture__icons {
+  .top__icons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 auto;
   }
 
-  .top__picture__ico {
+  .top__ico {
     margin-bottom: 15px;
   }
 }
