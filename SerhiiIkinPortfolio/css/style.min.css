@@ -2261,13 +2261,13 @@ button.swiper-pagination-bullet {
 }
 
 .project__text {
-  padding-bottom: 20px;
+  padding: 0 20px 20px;
 }
 
 .project__link {
   color: #e2a100;
   position: relative;
-  padding-left: 27px;
+  padding-left: 47px;
 }
 
 .project__link::before {
@@ -2279,7 +2279,7 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 0;
+  left: 27px;
   background: url("../img/stack/icons.svg#github") 0 0 no-repeat;
 }
 
