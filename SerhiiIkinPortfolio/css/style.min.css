@@ -446,7 +446,12 @@ input[type=radio].visually-hidden {
 }
 
 .current-lang:hover {
-  background-color: #00c4f0;
+  background-color: #e2a200;
+}
+
+.current-lang:hover::before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn {
