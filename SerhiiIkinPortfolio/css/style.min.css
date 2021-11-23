@@ -179,6 +179,14 @@ input[type=radio].visually-hidden {
 
 .header {
   padding-top: 10px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: -o-linear-gradient(348.44deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+  background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+  z-index: 5;
+  padding-left: calc(1px + 149* ((100vw -320px) / 1600));
+  padding-right: calc(1px + 149* ((100vw -320px) / 1600));
 }
 
 .header__container {
@@ -2183,7 +2191,7 @@ button.swiper-pagination-bullet {
 }
 
 .scroll {
-  z-index: 5;
+  z-index: 2;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -2518,6 +2526,7 @@ button.swiper-pagination-bullet {
   }
 
   .header__container {
+    left: -1%;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
