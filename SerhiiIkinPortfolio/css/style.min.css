@@ -179,11 +179,13 @@ input[type=radio].visually-hidden {
 
 .header {
   padding-top: 10px;
+  padding-bottom: 10px;
   top: 0;
   position: fixed;
   width: 100%;
-  background: -o-linear-gradient(348.44deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
-  background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#010109), color-stop(#0a3671), to(#00c1ec));
+  background: -o-linear-gradient(bottom, #010109, #0a3671, #00c1ec);
+  background: linear-gradient(360deg, #010109, #0a3671, #00c1ec);
   z-index: 5;
   padding-left: calc(1px + 149* ((100vw -320px) / 1600));
   padding-right: calc(1px + 149* ((100vw -320px) / 1600));
@@ -271,10 +273,10 @@ input[type=radio].visually-hidden {
   background: -o-linear-gradient(348.44deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
   background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
   padding-bottom: calc(20px + 30* ((100vw -320px) / 1600));
+  padding-top: calc(120px + 60* ((100vw -320px) / 1600));
 }
 
 .top__wrapper {
-  padding-top: calc(20px + 60* ((100vw -320px) / 1600));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2244,7 +2246,7 @@ button.swiper-pagination-bullet {
 
 .portfolio-side {
   padding-bottom: calc(20px + 60* ((100vw -320px) / 1600));
-  padding-top: calc(20px + 60* ((100vw -320px) / 1600));
+  padding-top: calc(120px + 60* ((100vw -320px) / 1600));
   background: -o-linear-gradient(319.32deg, #414141 0%, #2d2d2d 100.52%);
   background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
 }
