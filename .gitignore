@@ -1,8 +1,10 @@
 /.vscode
 /#src
 /node_modules
-/source
+/Source
 gulpfile.js
-.gitignore
+.stylelintrc
 package-lock.json
+.gitignore
 packege.json
+/SerhiiIkinPortfolio/css/style.css
