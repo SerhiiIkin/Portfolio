@@ -8,3 +8,11 @@ package-lock.json
 .gitignore
 packege.json
 /SerhiiIkinPortfolio/css/style.css
+/**/node_modules/
+/dist/
+/.git/
+/app/css/
+/**/_backstage
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store
