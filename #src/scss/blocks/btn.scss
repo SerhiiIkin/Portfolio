@@ -1,0 +1,187 @@
+.btn {
+    border-radius: 6px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: transparent;
+    &--orange {
+        background: linear-gradient(87.32deg, #e2a300 4.47%, #e29500 95.53%);
+        box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+        position: relative;
+        padding: 0;
+        height: 47px;
+        &:before,
+        &:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            background: rgba(251, 75, 2, 1);
+            box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        &:before {
+            height: 0%;
+            width: 2px;
+        }
+        &:after {
+            width: 0%;
+            height: 2px;
+        }
+        @media (min-width: 992px) {
+            &:hover {
+                color: rgba(251, 75, 2, 1);
+                background: transparent;
+            }
+            &:hover:before {
+                height: 100%;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+            span:hover:before {
+                height: 100%;
+            }
+            span:hover:after {
+                width: 100%;
+            }
+        }
+        span:before,
+        span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: rgba(251, 75, 2, 1);
+            box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        span:before {
+            width: 2px;
+            height: 0%;
+        }
+        span:after {
+            height: 2px;
+            width: 0%;
+        }
+    }
+    &--blue {
+        @media (min-width: 992px) {
+            &:hover {
+                box-shadow: 0 0 30px rgba(36, 163, 255, 0.5);
+                background: $blue-text;
+            }
+        }
+        &:active {
+            background: $blue-text;
+        }
+        box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+        background: $blue-text;
+    }
+    &--finish {
+        animation-name: buttom;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        box-shadow: none;
+        z-index: 2;
+        background: transparent;
+        font-size: 0;
+        position: absolute;
+        transform: none;
+        line-height: 0;
+        left: -115px;
+        color: black;
+        padding: 2px 10px;
+        visibility: hidden;
+        @media (min-width: 992px) {
+            &:hover {
+                box-shadow: none;
+                background: $text-grey;
+            }
+        }
+    }
+    &--tocontact {
+        transition: all 0.3s ease 0s;
+        position: relative;
+        box-shadow: none;
+        perspective: 230px;
+        width: 200px;
+        height: 50px;
+        margin-left: 20px;
+        color: #fff;
+        span {
+            padding-top: 15px;
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            color: #863201;
+            height: 100%;
+            background: rgb(0, 172, 238);
+            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            margin: 0;
+            transition: all .3s;
+        }
+        & span:nth-child(1) {
+            top: 0;
+            box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+            transform: rotateX(90deg);
+            transform-origin: 50% 50% -20px;
+            &::before {
+                content: "";
+                position: absolute;
+                background: url("../img/icons.svg#arrow-to-down") 0 0 no-repeat, transparent;
+                width: 15px;
+                height: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        & span:nth-child(2) {
+            top: 0;
+            transform: rotateX(0deg);
+            transform-origin: 50% 50% -20px;
+        }
+        @media (max-width: 991px) {
+            span {
+                padding-top: 6px;
+            }
+            & span:nth-child(1) {
+                box-shadow: none;
+                transform: none;
+                transform-origin: none;
+                position: absolute;
+                top: 10px;
+                z-index: 5;
+                background: transparent;
+            }
+        }
+        @media (min-width: 992px) {
+            &:hover span:nth-child(1) {
+                box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+                transform: rotateX(0deg);
+            }
+            &:hover span:nth-child(2) {
+                box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+                color: transparent;
+                transform: rotateX(-90deg);
+            }
+        }
+    }
+}
+
+@keyframes buttom {
+    100% {
+        visibility: visible;
+        padding: 17px 99px;
+        font-size: 14px;
+        line-height: 17px;
+        background: $text-grey;
+    }
+}

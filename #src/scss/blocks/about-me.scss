@@ -1,0 +1,163 @@
+.about-me {
+    @include adaptiv-value ("font-size", 18, 12, 0);
+    &__wrapper-header {
+        @include adaptiv-value ("padding-bottom", 40, 20, 0);
+    }
+    &__content {
+        flex: 1 1 50%;
+        @include adaptiv-value ("padding-left", 100, 20, 0);
+    }
+    &__mid {
+        @include adaptiv-value ("padding-top", 40, 20, 0);
+        display: flex;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__mid,
+    &__work-exp {
+        li {
+            padding-bottom: 5px;
+        }
+    }
+    &__column {
+        flex: 0 0 33.333%;
+        padding-right: 10px;
+        h3 {
+            padding-bottom: 10px;
+        }
+    }
+    &__contacts {
+        padding: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        @media (max-width: 767px) {
+            border-bottom: none;
+        }
+        a {
+            color: black;
+            @media (min-width: 992px) {
+                &:hover {
+                    color: $blue-text;
+                }
+            }
+        }
+    }
+    &__hard-skills {
+        list-style: none;
+        padding: 0;
+        li {
+            padding-left: 10px;
+        }
+    }
+    &__soft-skills {
+        list-style: none;
+        padding: 0;
+        border-left: 1px solid black;
+        li {
+            padding-left: 10px;
+        }
+        @media (max-width: 767px) {
+            border: none;
+        }
+    }
+    &__work-exp {
+        padding-top: 20px;
+        display: flex;
+        ul {
+            padding-left: 20px;
+        }
+    }
+    &__column33 {
+        flex: 1 1 33.333%;
+        padding-right: 10px;
+        h3 {
+            padding-bottom: 10px;
+        }
+    }
+    &__column66 {
+        flex: 1 1 66.666%;
+        @include adaptiv-value ("padding-left", 50, 5, 0);
+        @media (max-width: 767px) {
+            padding-left: 0;
+        }
+        ul {
+            padding-bottom: 10px;
+            &:last-child {
+                border-bottom: 1px solid black;
+            }
+        }
+        h3,
+        h4 {
+            padding-bottom: 10px;
+        }
+    }
+    &__education {
+        padding-top: 20px;
+        border-top: 1px solid black;
+    }
+    &__added {
+        h3 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+        }
+        p {
+            padding-bottom: 10px;
+        }
+        img {
+            width: 450px;
+        }
+    
+        padding: 20px 0;
+    }
+    &__print {
+        color: black;
+        padding: 4px;
+        border-radius: 6px;
+        background: $orange;
+        @media (min-width: 992px) {
+            &:hover {
+                background: $blue;
+                box-shadow: 0 0 20px #e2a200;
+            }
+        }
+    }
+}
+
+.about-me-header {
+    border-bottom: 1px solid #000;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    &__img {
+        grid-row: 1/-1;
+        grid-column: 1/2;
+        padding-right: 20px;
+    }
+    &__title {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        color: #32afb2;
+        text-transform: none;
+        padding-bottom: 10px;
+    }
+    &__subtitle {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-transform: none;
+        padding-bottom: 10px;
+    }
+    &__text {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    @media (max-width: 410px) {
+        &__text {
+            @include adaptiv-value ("padding-top", 30, 5, 0);
+            grid-column: 1/-1;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.portfolio-side {
+    @include adaptiv-value("padding-bottom", 80, 20, 0);
+    @include adaptiv-value ("padding-top", 180, 120, 0);
+    background: $gray_bg;
+    h2 {
+        text-align: center;
+        color: $blue-text;
+        @include adaptiv-value("font-size", 42, 32, 0);
+        @include adaptiv-value("line-height", 50, 28, 0);
+    }
+}

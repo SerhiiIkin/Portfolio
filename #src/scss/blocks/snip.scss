@@ -1,0 +1,11 @@
+.snip {
+    background: transparent;
+    &:active {
+        background: transparent;
+    }
+    @media (min-width: 992px) {
+        &:hover {
+            background: transparent;
+        }
+    }
+}

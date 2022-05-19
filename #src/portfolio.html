@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Serhii Ikin</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1 class="visually-hidden">
+        Portfolio Serhii Ikin
+    </h1>
+    @@include("_header.html")
+    <main class="portfolio-side">
+        <h2>My projects</h2>
+        <div class="container">
+            <section class="project">
+                <h3 class="project__title arodora-pro--24-29">Last project from kurs</h3>
+                <img src="img/kursus-project-eng.jpg" class="img-responsive" alt="the course project image">
+                <div class="project__text arodora-pro--18-21">This was a web page from my hmtl / css course. Here I have some knowledge about html, css and how to work with it. I used more js for this web page and I was very happy because I learned it myself. Here you can see the main web page, but
+                    you can always click on the links below and see my project online. This project works in three languages ​​because it was in the layout. I did my best to make it work because I like the way my web page works. The page is adaptive,
+                    which is very convenient because you can view the page from any device and it will always be comfortable to view. Click on the link below, and look at my work with pleasure :)
+                </div>
+                <a target="_blank" aria-label="go to github Last project from kurs" href="https://serhiiikin.github.io/ProjectKursus/app/" class="project__link arodora-pro--18-21">Link in github</a>
+            </section>
+            <section class="project">
+                <div class="project__title arodora-pro--24-29">Project from kurs,but it was one of tasks</div>
+                <img class="img-responsive" src="img/kursus-lessons-project.jpg" alt="task from kurs">
+                <div class="project__text arodora-pro--18-21">It was also a site from my HTML / CSS course, where I first used JS for "Menu Burger" and realized it wasn't as complicated as I imagined. With the acquired knowledge, I could already make such easy sites on one page, and even using already
+                    a little JavaScript. By clicking on the link below, you can see what my first site was :)</div>
+                <a target="_blank" aria-label="go to github task from kurs" href="https://serhiiikin.github.io/Serhii-Ikin-lesson-13/" class="project__link arodora-pro--18-21">Link in github</a>
+            </section>
+        </div>
+    </main>
+
+    @@include("_scroll.html") @@include("_footer.html")
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+.top {
+    background: $black_bg;
+    @include adaptiv-value ("padding-bottom", 50, 20, 0);
+    @include adaptiv-value ("padding-top", 180, 60, 0);
+    &__wrapper {
+        display: flex;
+    }
+    &__btn {
+        @include adaptiv-value ("width", 250, 200, 0);
+    }
+    &__content {
+        width: 35%;
+        h3 {
+            padding-bottom: 27px;
+        }
+        h2 {
+            padding-bottom: 27px;
+        }
+        p {
+            padding-bottom: 27px;
+        }
+    }
+    &__ico {
+        box-shadow: 0 0 20px $onlyorange;
+        color: $blue;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        z-index: 2;
+        border-radius: 50%;
+        background: $black_bg;
+    }
+    &__html,
+    &__css,
+    &__js,
+    &__sass {
+        text-transform: uppercase;
+    }
+    &__figma,
+    &__vs-code {
+        span {
+            text-transform: uppercase;
+        }
+        text-transform: capitalize;
+    }
+    &__html,
+    &__sass {
+        top: 20%;
+        transform: translateY(-20%);
+    }
+    &__css,
+    &__figma {
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    &__js,
+    &__vs-code {
+        top: 60%;
+        transform: translateY(-60%);
+    }
+    &__html,
+    &__css,
+    &__js {
+        left: -27%;
+        transform: translateX(27%);
+    }
+    &__sass,
+    &__figma,
+    &__vs-code {
+        right: -17%;
+        transform: translateX(17%);
+    }
+    &__picture {
+        margin-left: auto;
+    }
+    &__container {
+        max-width: 500px;
+        img {
+            border-radius: 70%/30%;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        margin-right: 80px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 98%;
+            height: 65%;
+            border-radius: 40%;
+            top: 50%;
+            left: 0;
+            transform: translate(-10%, -50%);
+            border: 67px solid $blue;
+            box-shadow: 0px 0px 152px rgba(0, 196, 240, 0.42);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .top {
+        &__picture {
+            width: 55%;
+        }
+        &__content {
+            padding-right: 20px;
+        }
+        &__container {
+            &::after {
+                transform: translate(-11%, -50%);
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .top {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &__content {
+            width: 100%;
+            padding-bottom: 30px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__picture {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__icons {
+            display: none;
+        }
+        &__ico {
+            position: static;
+            transform: none;
+            margin: 0 10px;
+        }
+        &__container {
+            margin: 0 auto;
+            position: inherit;
+            display: flex;
+            flex-direction: column;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

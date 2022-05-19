@@ -1,0 +1,103 @@
+.skills {
+    @include adaptiv-value ("padding-top", 80, 20, 0);
+    &__items-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        @include adaptiv-value ("width", 270, 70, 0);
+        @include adaptiv-value ("height", 270, 130, 0);
+        background: #2a2a2a;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+        border-radius: 29px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10px;
+        @include adaptiv-value ("padding-top", 50, 20, 0);
+        position: relative;
+        &::before {
+            @include adaptiv-value ("top", 100, 70, 0);
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            position: absolute;
+            @include adaptiv-value ("width", 90, 30, 0);
+            @include adaptiv-value ("height", 135, 45, 0);
+        }
+        &--html,
+        &--css,
+        &--js,
+        &--sass {
+            text-transform: uppercase;
+        }
+        &--figma,
+        &--vs-code,
+        &--frontend,
+        &--motion,
+        &--pixel-perfect,
+        &--react,
+        &--redux,
+        &--jquery,
+        &--webpack,
+        &--nodejs,
+        &--gulp {
+            span {
+                text-transform: uppercase;
+            }
+            text-transform: capitalize;
+        }
+        &--html::before {
+            background: url("../img/icons.svg#html") 0 0 no-repeat;
+        }
+        &--css::before {
+            background: url("../img/icons.svg#css") 0 0 no-repeat;
+        }
+        &--js::before {
+            background: url("../img/icons.svg#js") 0 0 no-repeat;
+        }
+        &--sass::before {
+            background: url("../img/icons.svg#sass") 0 0 no-repeat;
+        }
+        &--figma::before {
+            background: url("../img/icons.svg#figma") 0 0 no-repeat;
+        }
+        &--vs-code::before {
+            background: url("../img/icons.svg#vsc") 0 0 no-repeat;
+        }
+        &--frontend::before {
+            background: url("../img/icons.svg#frontend") 0 0 no-repeat;
+        }
+        &--motion::before {
+            background: url("../img/icons.svg#motion") 0 0 no-repeat;
+        }
+        &--pixel-perfect::before {
+            border-radius: 40%;
+            background: url("../img/perfect-pixel.png") 0/contain no-repeat;
+        }
+        &--react::before{
+            background: url("../img/icons.svg#react") 0 0 no-repeat;
+        }
+        &--redux::before{
+            background: url("../img/icons.svg#redux") 0 0 no-repeat;
+        }
+        &--jquery::before{
+            background: url("../img/icons.svg#jquery") 0 0 no-repeat;
+            @include adaptiv-value ("width", 150, 30, 0);
+        }
+        &--webpack::before{
+            background: url("../img/icons.svg#webpack") 0 0 no-repeat;
+        }
+        &--nodejs::before{
+            background: url("../img/icons.svg#nodejs") 0 0 no-repeat;
+        }
+        &--gulp::before{
+            background: url("../img/icons.svg#gulp") 0 0 no-repeat;
+            left: 60%;
+        }
+        &-container {
+            padding: 15px;
+        }
+    }
+}

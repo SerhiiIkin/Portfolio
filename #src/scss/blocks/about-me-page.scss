@@ -1,0 +1,7 @@
+.about-me-page {
+    &__greybg {
+        @include adaptiv-value ("padding-top", 180, 100, 0);
+        background: white;
+        @include adaptiv-value ("padding-bottom", 40, 20, 0);
+    }
+}

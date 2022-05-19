@@ -1,0 +1,11 @@
+.spinner svg {
+    animation-name: spinner;
+    animation-duration: 5s;
+    background: transparent;
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(1440deg);
+    }
+}

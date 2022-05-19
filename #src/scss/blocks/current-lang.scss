@@ -1,0 +1,10 @@
+.current-lang {
+    border-radius: 50%;
+    background-color: $onlyorange;
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: $onlyorange;
+            box-shadow: none;
+        }
+    }
+}

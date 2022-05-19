@@ -1,0 +1,12 @@
+.ready {
+    background: grey;
+    color: black;
+    @media (min-width: 992px) {
+        &:hover {
+            background: grey;
+        }
+    }
+    &:active {
+        background: grey;
+    }
+}

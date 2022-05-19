@@ -1,0 +1,75 @@
+.arodora-pro {
+    font-family: "ArodoraPro";
+    font-weight: 300;
+    &--20-24 {
+        @include adaptiv-value("font-size", 20, 17, 0);
+        @include adaptiv-value("line-height", 24, 22, 0);
+    }
+    &--24-29 {
+        @include adaptiv-value("font-size", 24, 18, 0);
+        @include adaptiv-value("line-height", 29, 25, 0);
+    }
+    &--18-21 {
+        @include adaptiv-value("font-size", 18, 14, 0);
+        @include adaptiv-value("line-height", 21, 18, 0);
+    }
+    &--white {
+        color: #ffffff;
+    }
+    &--grey {
+        color: $text-grey;
+    }
+    &--orange {
+        color: $orangetext;
+    }
+}
+
+.mico-moji {
+    font-family: "Nico-Moji";
+    &--18 {
+        @include adaptiv-value("font-size", 18, 14, 0);
+        @include adaptiv-value("line-height", 18, 15, 0);
+        &-white {
+            color: white;
+        }
+    }
+}
+
+.next-art {
+    font-family: "next-art";
+    &--72-82 {
+        @include adaptiv-value("font-size", 72, 33, 0);
+        @include adaptiv-value("line-height", 82, 45, 0);
+    }
+    &--48-54 {
+        @include adaptiv-value("font-size", 48, 30, 0);
+        @include adaptiv-value("line-height", 54, 46, 0);
+    }
+    &--36-41 {
+        @include adaptiv-value("font-size", 36, 18, 0);
+        @include adaptiv-value("line-height", 41, 35, 0);
+    }
+    &--24-30 {
+        @include adaptiv-value("font-size", 24, 18, 0);
+        @include adaptiv-value("line-height", 30, 26, 0);
+    }
+    &--18-20 {
+        @include adaptiv-value("font-size", 18, 14, 0);
+        @include adaptiv-value("line-height", 20, 17, 0);
+    }
+    &--bold {
+        font-weight: bold;
+    }
+    &--black {
+        color: #000;
+    }
+    &--white {
+        color: #fff;
+    }
+    &--grey {
+        color: $text-grey;
+    }
+    &--blue {
+        color: $blue;
+    }
+}

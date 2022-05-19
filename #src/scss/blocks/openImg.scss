@@ -1,0 +1,31 @@
+.openImg {
+    @include adaptiv-value ("width", 700, 270, 0);
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        @include adaptiv-value ("width", 40, 7, 0);
+        height: 1px;
+        background: red;
+        @include adaptiv-value ("top", 10, 1, 0);
+        right: -3%;
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+    &::before {
+        transform: rotate(-45deg);
+    }
+    img {
+        @media (min-width: 992px) {
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
