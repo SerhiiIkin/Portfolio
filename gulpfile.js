@@ -148,7 +148,7 @@ function fonts() {
     return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
 fonter;
-gulp.task("otf2ttf", function() {
+gulp.task("otf2ttf", function () {
     return src([source_folder + "/fonts/*.otf"])
         .pipe(
             fonter({
@@ -183,7 +183,7 @@ function fontsStyle(params) {
     let file_content = fs.readFileSync(source_folder + "/scss/fonts.scss");
     if (file_content == "") {
         fs.writeFile(source_folder + "/scss/fonts.scss", "", cb);
-        return fs.readdir(path.build.fonts, function(err, items) {
+        return fs.readdir(path.build.fonts, function (err, items) {
             if (items) {
                 let c_fontname;
                 for (var i = 0; i < items.length; i++) {
@@ -207,7 +207,7 @@ function fontsStyle(params) {
     }
 }
 
-function cb() {}
+function cb() { }
 
 function files() {
     return src(path.src.files)
@@ -228,7 +228,7 @@ function clean(params) {
 let build = gulp.series(
     clean, svg, svgMove,
     gulp.parallel(js, css, html, images, fonts),
-    files, fontsStyle
+    files,
 );
 let watch = gulp.parallel(build, watchFiles, browserSync);
 exports.svgMove = svgMove;

@@ -8,4 +8,5 @@
 @@include("changePage&Lang.js")
 @@include("toFooter.js")
 @@include("dynamicAdapt_dev.js")
+@@include("imgOpen.js")
 @@include("test.js")

@@ -28,9 +28,11 @@
     @media (min-width: 992px) {
         &:hover {
             background: $blue;
+            transition: all 0.6s ease 0s;
         }
         &:hover::before {
             box-shadow: 0 0 20px $onlyorange;
+            transition: all 0.6s ease 0s;
         }
     }
 }

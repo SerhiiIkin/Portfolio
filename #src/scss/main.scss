@@ -1,12 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    &:hover *,
-    &:hover,
-    &:hover::after,
-    &:hover::before {
-        transition: all 0.6s ease 0s;
-    }
+   
 }
 
 a {
