@@ -163,10 +163,4 @@
         grid-row: 3/4;
         grid-column: 2/3;
     }
-    @media (max-width: 400px) {
-        &__text {
-            @include adaptiv-value ("padding-top", 30, 5, 0);
-            grid-column: 1/-1;
-        }
-    }
 }
