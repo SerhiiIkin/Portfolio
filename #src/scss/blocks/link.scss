@@ -1,0 +1,13 @@
+.link {
+    color: $orangetext;
+    padding: 5px;
+    transition: color 0.3s ease 0s;
+        @media (min-width: 992px) {
+            &:hover {
+                background-color: $blue;
+                border-radius: 6px;
+                box-shadow: 0 0 20px #e2a200;
+                color: white;
+            }
+        }
+}
