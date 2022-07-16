@@ -21,12 +21,13 @@
         min-height: 420px;
     }
     &__img {
-        flex: 0 0 60%
+        flex: 0 0 60%;
     }
     img {
         width: 100%;
         height: 100%;
         border-radius: 5px;
+        max-height: 400px;
     }
     &__block {
         flex: 0 0 40%;
