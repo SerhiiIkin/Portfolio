@@ -3,6 +3,7 @@ function burgerMenu() {
     var linksMenu = document.querySelectorAll(".header__menu a");
     var menu = document.querySelector(".header__menu");
     linksMenu.forEach(closeMenu);
+    menuBurger.addEventListener("click", openMenu);
 
     function closeMenu(item) {
         item.addEventListener("click", function() {
@@ -17,6 +18,6 @@ function burgerMenu() {
         menu.classList.toggle("active");
         document.body.classList.toggle("lock");
     }
-    menuBurger.addEventListener("click", openMenu);
+    
 }
 burgerMenu();
