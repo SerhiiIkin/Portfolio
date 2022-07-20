@@ -8,9 +8,10 @@
     overflow-y: auto;
     img {
         cursor: zoom-out;
-        max-width: 100%;
         width: 100%;
+        max-width: 100%;
         padding: 3% 0;
+        max-height: 95vh;
         @media (min-width: 992px) {
             &:hover {
                 box-shadow: none;
@@ -19,10 +20,9 @@
     }
     span {
         position: absolute;
-        top: 50%;
+        top: 5%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        width: 90%;
-        margin: 50px 0;
+        transform: translate(-50%);
+        width: 98%;
     }
 }

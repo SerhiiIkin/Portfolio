@@ -8,7 +8,7 @@ function onImgClick(e, image) {
     if (image) {
         image.classList.toggle("openImg");
         image.style.top = (window.pageYOffset) + "px";
-        img.style.maxHeight = (window.outerHeight - 50) + "px"
+        //img.style.maxHeight = (window.outerHeight - 50) + "px"
         document.body.classList.toggle("lock");
     }
 
