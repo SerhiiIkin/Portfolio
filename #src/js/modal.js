@@ -1,19 +1,25 @@
 var sendBtn = document.querySelector(".modal__btn");
 var lang = document.getElementsByTagName('html')[0].getAttribute('lang');
+var closeMod = document.querySelector(".modal__close");
+
+if (closeMod) {
+    closeMod.addEventListener("click", form.reset())
+} 
+
+
 
 function btnClick() {
     var form = document.getElementById("form");
     var formReq = document.querySelectorAll(".req");
     var openMod = document.querySelector(".top__btn");
     var modalWin = document.querySelector(".modal");
-    var closeMod = document.querySelector(".modal__close");
     var modal_btn = document.querySelector(".modal__btn-place");
     for (var index = 0; index < formReq.length; index++) {
         var input = formReq[index];
         formRemoveError(input);
     }
     form.reset();
-    sendBtn.addEventListener("click", function() {
+    sendBtn.addEventListener("click", function () {
         form.addEventListener("submit", formSend);
     });
 
