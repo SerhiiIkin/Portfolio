@@ -94,6 +94,15 @@
             background: url("../img/icons.svg#gulp") 0 0 no-repeat;
             left: 60%;
         }
+        &--typescript::before{
+            background: url("../img/icons.svg#typescript") 0 0 no-repeat;
+        }
+        &--angular::before{
+            background: url("../img/icons.svg#angular") 0 0 no-repeat;
+        }
+        &--tailwindcss::before{
+            background: url("../img/icons.svg#tailwindcss") 0 0 no-repeat;
+        }
         &-container {
             padding: 15px;
         }

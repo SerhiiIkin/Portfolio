@@ -2,9 +2,11 @@ var sendBtn = document.querySelector(".modal__btn");
 var lang = document.getElementsByTagName('html')[0].getAttribute('lang');
 var closeMod = document.querySelector(".modal__close");
 
+
 if (closeMod) {
     closeMod.addEventListener("click", form.reset())
-} 
+}
+
 
 
 
@@ -14,6 +16,7 @@ function btnClick() {
     var openMod = document.querySelector(".top__btn");
     var modalWin = document.querySelector(".modal");
     var modal_btn = document.querySelector(".modal__btn-place");
+    const background = document.querySelector(".modal")
     for (var index = 0; index < formReq.length; index++) {
         var input = formReq[index];
         formRemoveError(input);
@@ -216,11 +219,6 @@ function btnClick() {
         }, 5000);
     }
 
-    function getCoordsModal() {
-        var scrM = window.scrollY;
-        modalWin.style.top = scrM + "px";
-    }
-
     function closeModalW() {
         modalWin.classList.add("close");
         modalWin.classList.remove("open");
@@ -231,9 +229,15 @@ function btnClick() {
     function openModW() {
         modalWin.classList.remove("close");
         modalWin.classList.add("open");
-        getCoordsModal();
         document.body.style.overflow = "hidden";
     }
+
+    function onBackgroundClick() {
+        closeModalW()
+    }
+
+
+    background.addEventListener("click", onBackgroundClick)
     openMod.addEventListener("click", openModW);
     closeMod.addEventListener("click", closeModalW);
 }
