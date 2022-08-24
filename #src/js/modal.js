@@ -16,7 +16,6 @@ function btnClick() {
     var openMod = document.querySelector(".top__btn");
     var modalWin = document.querySelector(".modal");
     var modal_btn = document.querySelector(".modal__btn-place");
-    const background = document.querySelector(".modal")
     for (var index = 0; index < formReq.length; index++) {
         var input = formReq[index];
         formRemoveError(input);
@@ -232,12 +231,9 @@ function btnClick() {
         document.body.style.overflow = "hidden";
     }
 
-    function onBackgroundClick() {
-        closeModalW()
-    }
+   
 
 
-    background.addEventListener("click", onBackgroundClick)
     openMod.addEventListener("click", openModW);
     closeMod.addEventListener("click", closeModalW);
 }
