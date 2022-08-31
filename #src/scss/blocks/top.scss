@@ -8,6 +8,12 @@
     &__btn {
         @include adaptiv-value ("width", 250, 200, 0);
     }
+    &__link {
+        @include adaptiv-value ("width", 250, 200, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &__content {
         width: 35%;
         h3 {
